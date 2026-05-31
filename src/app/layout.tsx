@@ -16,11 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Thein Khathu - သင့်အတွက် အကောင်းဆုံး ဝန်ဆောင်မှု",
-  description: "Thein Khathu - သတင်းအချက်အလက် website",
-  icons: {
-    icon: "/favicon.ico",
-  },
+  title: "သိင်္ခသူ - ခရီးသည်နှင့်ကုန်စည် ပို့ဆောင်ရေး",
+  description: "တောင်ကြီး၊ တာချီလိတ်၊ လားရှိုး ယာဥ်လိုင်းပြေးဆွဲ",
 };
 
 export default function RootLayout({

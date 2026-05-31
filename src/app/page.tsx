@@ -7,11 +7,14 @@ export default function Home() {
       <section className="bg-gradient-to-br from-emerald-600 to-emerald-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
           <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Thein Khathu
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">
+              သိင်္ခသူ
             </h1>
-            <p className="text-xl md:text-2xl text-emerald-100 mb-8 max-w-2xl mx-auto">
-              သင့်အတွက် အကောင်းဆုံး ဝန်ဆောင်မှုများ ပေးအပ်ရန် ကြိုးစားနေပါသည်။
+            <p className="text-2xl md:text-3xl text-emerald-100 mb-2">
+              ခရီးသည်နှင့်ကုန်စည် ပို့ဆောင်ရေး
+            </p>
+            <p className="text-lg text-emerald-200 mb-8">
+              တောင်ကြီး ✦ တာချီလိတ် ✦ လားရှိုး
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -31,63 +34,85 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Features Section */}
+      {/* Routes Section */}
       <section className="py-16 md:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              ကျွန်ုပ်တို့၏ ဝန်ဆောင်မှုများ
+              ပြေးဆွဲနေသော ယာဥ်လိုင်းများ
             </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              သင့်လိုအပ်ချက်အလိုက် အကောင်းဆုံး ဖြေရှင်းချက်များ ပေးအပ်ပါသည်
+            <p className="text-gray-600">
+              ရှမ်းပြည်နယ်ရှိ မြို့ကြီး ၃ မြို့သို့ ပုံမှန်ပြေးဆွဲပေးလျက်ရှိပါသည်
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                title: "သတင်းအချက်အလက်",
-                description: "နောက်ဆုံးရ သတင်းအချက်အလက်များကို အချိန်နှင့်တပြေးညီ ရရှိနိုင်ပါသည်။",
-                icon: "📰",
+                from: "တောင်ကြီး",
+                to: "တာချီလိတ်",
+                icon: "🚗",
               },
               {
-                title: "ယုံကြည်စိတ်ချရ",
-                description: "စစ်မှန်သော သတင်းအချက်အလက်များကိုသာ ဖော်ပြပေးပါသည်။",
-                icon: "✅",
+                from: "တာချီလိတ်",
+                to: "လားရှိုး",
+                icon: "🚗",
               },
               {
-                title: "အခမဲ့ ဝန်ဆောင်မှု",
-                description: "လူတိုင်း အသုံးပြုနိုင်ရန် အခမဲ့ ဝန်ဆောင်မှု ပေးအပ်ပါသည်။",
-                icon: "🆓",
+                from: "တောင်ကြီး",
+                to: "လားရှိုး",
+                icon: "🚗",
               },
-            ].map((feature, index) => (
+            ].map((route, index) => (
               <div
                 key={index}
                 className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow text-center"
               >
-                <div className="text-4xl mb-4">{feature.icon}</div>
+                <div className="text-4xl mb-4">{route.icon}</div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  {feature.title}
+                  {route.from} ↔ {route.to}
                 </h3>
-                <p className="text-gray-600">{feature.description}</p>
+                <p className="text-gray-600">ပုံမှန်ပြေးဆွဲ</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* Vehicle Section */}
       <section className="py-16 md:py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              အသုံးပြုထားသော ယာဥ်များ
+            </h2>
+          </div>
+
+          <div className="max-w-2xl mx-auto">
+            <div className="bg-gray-50 p-8 rounded-xl text-center">
+              <div className="text-5xl mb-4">🚙</div>
+              <h3 className="text-2xl font-semibold text-gray-900 mb-2">Toyota Probox</h3>
+              <p className="text-gray-600 leading-relaxed">
+                ကုန်စည်နှင့် ခရီးသည်များ လုံခြုံစိတ်ချစွာ ပို့ဆောင်ပေးနိုင်ရန် 
+                Probox ကားငယ်များဖြင့် ဝန်ဆောင်မှု ပေးလျက်ရှိပါသည်။
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 md:py-24 bg-emerald-700 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            ဆက်သွယ်လိုပါသလား?
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            စီးနင်းလိုပါသလား?
           </h2>
-          <p className="text-gray-600 mb-8 max-w-xl mx-auto">
-            မေးစရာရှိပါက သို့မဟုတ် ပူးပေါင်းဆောင်ရွက်လိုပါက ဆက်သွယ်ပါ။
+          <p className="text-emerald-100 mb-8 max-w-xl mx-auto">
+            ကြိုတင်မှာယူလိုပါက ဆက်သွယ်ပါ
           </p>
           <Link
             href="/contact"
-            className="inline-block bg-emerald-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-emerald-700 transition-colors"
+            className="inline-block bg-white text-emerald-700 px-8 py-3 rounded-lg font-semibold hover:bg-emerald-50 transition-colors"
           >
             ဆက်သွယ်ရန်
           </Link>

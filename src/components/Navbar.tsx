@@ -12,8 +12,9 @@ export default function Navbar() {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link href="/" className="text-2xl font-bold text-emerald-700">
-              Thein Khathu
+              သိင်္ခသူ
             </Link>
+            <span className="hidden sm:inline text-gray-500 text-sm ml-3">ခရီးသည်နှင့်ကုန်စည် ပို့ဆောင်ရေး</span>
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
